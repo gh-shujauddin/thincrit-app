@@ -1,0 +1,125 @@
+{
+  "roles": [
+    {
+      "id": 1,
+      "name": "Student"
+    },
+    {
+      "id": 2,
+      "name": "Working Professional"
+    },
+    {
+      "id": 3,
+      "name": "Job Seeker"
+    },
+    {
+      "id": 4,
+      "name": "Housewives"
+    },
+    {
+      "id": 5,
+      "name": "Entrepreneurs"
+    },
+    {
+      "id": 6,
+      "name": "Freelancer"
+    },
+    {
+      "id": 7,
+      "name": "Creative"
+    },
+    {
+      "id": 8,
+      "name": "Parents"
+    }
+  ],
+  "daily_goals": [
+    {
+      "id": 1,
+      "name": "Casual",
+      "minutes": 5
+    },
+    {
+      "id": 2,
+      "name": "Regular",
+      "minutes": 10
+    },
+    {
+      "id": 3,
+      "name": "Serious",
+      "minutes": 15
+    },
+    {
+      "id": 4,
+      "name": "Intense",
+      "minutes": 20
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "text": "You have a lemonade stand and sell each cup for $1. You sell 4 cups. How much money do you make?",
+      "options": [
+        {
+          "id": 1,
+          "text": "$2"
+        },
+        {
+          "id": 2,
+          "text": "$3"
+        },
+        {
+          "id": 3,
+          "text": "$4"
+        }
+      ],
+      "correct_option_id": 3
+    },
+    {
+      "id": 2,
+      "text": "Hard is to glove as foot is to ________?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Toe"
+        },
+        {
+          "id": 2,
+          "text": "Shoe"
+        },
+        {
+          "id": 3,
+          "text": "Slice"
+        },
+        {
+          "id": 4,
+          "text": "Sock"
+        }
+      ],
+      "correct_option_id": 2
+    },
+    {
+      "id": 3,
+      "text": "Which of these is \"Red\" in color?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Apple"
+        },
+        {
+          "id": 2,
+          "text": "Banana"
+        },
+        {
+          "id": 3,
+          "text": "Cherry"
+        },
+        {
+          "id": 4,
+          "text": "Grapes"
+        }
+      ],
+      "correct_option_id": 3
+    }
+  ]
+}
