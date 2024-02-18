@@ -1,9 +1,10 @@
-import { View, Text, SafeAreaView, StyleSheet, Platform, StatusBar } from "react-native";
+import { View, Text, SafeAreaView, StyleSheet, Platform, StatusBar, Pressable } from "react-native";
 import React from "react";
 import BackButton from "@/components/BackButton";
-import { Stack } from "expo-router";
+import { Link, Stack } from "expo-router";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
+import Question from "./Question";
 
 const PathScreen = () => {
   return (
@@ -16,28 +17,32 @@ const PathScreen = () => {
       <View style={{ paddingHorizontal: 40, alignItems: 'center', flex: 1 }}>
         <Text style={styles.title}>Choose your path</Text>
         <View style={styles.box}>
-          <View style={styles.dataItemContainer}>
-            <View style={styles.dataItem}>
-              <View style={[styles.dataIcon]}>
-                <MaterialCommunityIcons name="brain" size={80} color='#40A3E2' />
+          <Link href={{ pathname: `Question`, params: { question: 'thinking' } }} asChild>
+            <Pressable style={styles.dataItemContainer}>
+              <View style={styles.dataItem}>
+                <View style={[styles.dataIcon]}>
+                  <MaterialCommunityIcons name="brain" size={120} color='#40A3E2' />
+                </View>
+                <View style={{ flex: 1, }}>
+                  <Text style={styles.dataItemTitle}>Improve critical thinking</Text>
+                  <Text style={styles.dataItemDesc}>Transform thoughts</Text>
+                </View>
               </View>
-              <View style={{ flex: 1, justifyContent: 'space-between' }}>
-                <Text style={styles.dataItemTitle}>Improve critical thinking</Text>
-                <Text style={styles.dataItemDesc}>Transform thoughts</Text>
+            </Pressable>
+          </Link>
+          <Link href={{ pathname: `Question`, params: { question: 'timing' } }} asChild>
+            <Pressable style={styles.dataItemContainer}>
+              <View style={styles.dataItem}>
+                <View style={[styles.dataIcon]}>
+                  <AntDesign name="clockcircleo" size={90} color="#40A3E2" />
+                </View>
+                <View style={{ flex: 1, }}>
+                  <Text style={styles.dataItemTitle}>Improve time management</Text>
+                  <Text style={styles.dataItemDesc}>Transform thoughts</Text>
+                </View>
               </View>
-            </View>
-          </View>
-          <View style={styles.dataItemContainer}>
-            <View style={styles.dataItem}>
-              <View style={[styles.dataIcon]}>
-                <AntDesign name="clockcircleo" size={80} color="#40A3E2" />
-              </View>
-              <View style={{ flex: 1, justifyContent: 'space-between' }}>
-                <Text style={styles.dataItemTitle}>Improve time management</Text>
-                <Text style={styles.dataItemDesc}>Transform thoughts</Text>
-              </View>
-            </View>
-          </View>
+            </Pressable>
+          </Link>
         </View>
       </View>
     </SafeAreaView>
@@ -80,19 +85,22 @@ const styles = StyleSheet.create({
   dataItem: {
     justifyContent: 'center',
     alignItems: 'center',
-    borderWidth: 7,
-    borderRadius: 15,
+    borderWidth: 5,
+    borderRadius: 20,
     borderColor: 'lightgray',
-    width: 300,
+    width: 280,
     aspectRatio: 1,
   },
 
   dataIcon: {
-    flex: 1, justifyContent: 'center', alignItems: "center"
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: "center"
 
   },
   dataItemTitle: {
-    fontSize: 30,
+    fontSize: 25,
+    paddingHorizontal: 20,
     fontFamily: 'SignicaSemi',
     textAlign: 'center',
   },

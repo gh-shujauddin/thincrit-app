@@ -18,8 +18,9 @@ export default function App() {
     InterBlack: Inter_900Black,
     Signica: require('@assets/font/Signika-Regular.ttf'),
     SignicaLight: require('@assets/font/Signika-Light.ttf'),
-    SignicaSemi: require('@assets/font/Signika-Medium.ttf'),
-
+    SignicaMedium: require('@assets/font/Signika-Medium.ttf'),
+    SignicaSemi: require('@assets/font/Signika-SemiBold.ttf'),
+    SignicaBold: require('@assets/font/Signika-Bold.ttf'),
   });
 
   useEffect(() => {

@@ -55,29 +55,32 @@
       "minutes": 20
     }
   ],
-  "questions": [
+  "thinking_questions": [
     {
       "id": 1,
-      "text": "You have a lemonade stand and sell each cup for $1. You sell 4 cups. How much money do you make?",
+      "text": "Which of these is \"Red\" in color?",
+      "category": "color",
       "options": [
         {
           "id": 1,
-          "text": "$2"
+          "text": "#EB6E6E"
         },
         {
           "id": 2,
-          "text": "$3"
+          "text": "#FE66C5"
         },
         {
           "id": 3,
-          "text": "$4"
+          "text": "#FE904D"
         }
       ],
-      "correct_option_id": 3
+      "correct_option_id": 1
     },
     {
       "id": 2,
-      "text": "Hard is to glove as foot is to ________?",
+      "text": "Hand is to glove as foot is to ________?",
+      "category": "text",
+
       "options": [
         {
           "id": 1,
@@ -98,28 +101,303 @@
       ],
       "correct_option_id": 2
     },
+
     {
       "id": 3,
-      "text": "Which of these is \"Red\" in color?",
+      "text": "You have a lemonade stand and sell each cup for $1. You sell 4 cups. How much money do you make?",
+      "category": "text",
       "options": [
         {
           "id": 1,
-          "text": "Apple"
+          "text": "$2"
         },
         {
           "id": 2,
-          "text": "Banana"
+          "text": "$3"
         },
         {
           "id": 3,
-          "text": "Cherry"
-        },
-        {
-          "id": 4,
-          "text": "Grapes"
+          "text": "$4"
         }
       ],
       "correct_option_id": 3
+    },
+    {
+      "id": 4,
+      "text": "If all cats are mammals, and some mammals are carnivores, can we conclude that all cats are carnivores?",
+      "category": "text",
+      "options": [
+        {
+          "id": 1,
+          "text": "Yes"
+        },
+        {
+          "id": 2,
+          "text": "No"
+        }
+      ],
+      "correct_option_id": 2
+    },
+    {
+      "id": 5,
+      "text": "If 'book' is to 'library,' what is 'pen' to?",
+      "category": "text",
+      "options": [
+        {
+          "id": 1,
+          "text": "Paper"
+        },
+        {
+          "id": 2,
+          "text": "Desk"
+        },
+        {
+          "id": 3,
+          "text": "School"
+        },
+        {
+          "id": 4,
+          "text": "Office"
+        }
+      ],
+      "correct_option_id": 2
+    },
+    {
+      "id": 6,
+      "text": "If 3 apples cost $6, how much would 5 apples cost?",
+      "category": "text",
+      "options": [
+        {
+          "id": 1,
+          "text": "$8"
+        },
+        {
+          "id": 2,
+          "text": "$10"
+        },
+        {
+          "id": 3,
+          "text": "$12"
+        },
+        {
+          "id": 4,
+          "text": "$15"
+        }
+      ],
+      "correct_option_id": 2
+    },
+    {
+      "id": 7,
+      "text": "What is the synonym for 'abundant'?",
+      "category": "text",
+      "options": [
+        {
+          "id": 1,
+          "text": "Scarce"
+        },
+        {
+          "id": 2,
+          "text": "Plentiful"
+        },
+        {
+          "id": 3,
+          "text": "Limited"
+        },
+        {
+          "id": 4,
+          "text": "Sparse"
+        }
+      ],
+      "correct_option_id": 2
+    },
+
+    {
+      "id": 8,
+      "text": "Which continent is known as the 'Land Down Under'?",
+      "category": "text",
+      "options": [
+        {
+          "id": 1,
+          "text": "Europe"
+        },
+        {
+          "id": 2,
+          "text": "Africa"
+        },
+        {
+          "id": 3,
+          "text": "Australia"
+        },
+        {
+          "id": 4,
+          "text": "South America"
+        }
+      ],
+      "correct_option_id": 3
+    },
+    {
+      "id": 9,
+      "text": "What gas do plants absorb during photosynthesis?",
+      "category": "text",
+      "options": [
+        {
+          "id": 1,
+          "text": "Oxygen"
+        },
+        {
+          "id": 2,
+          "text": "Nitrogen"
+        },
+        {
+          "id": 3,
+          "text": "Carbon dioxide"
+        },
+        {
+          "id": 4,
+          "text": "Hydrogen"
+        }
+      ],
+      "correct_option_id": 3
+    },
+    {
+      "id": 10,
+      "text": "Who was the first President of the United States?",
+      "category": "text",
+      "options": [
+        {
+          "id": 1,
+          "text": "Thomas Jefferson"
+        },
+        {
+          "id": 2,
+          "text": "George Washington"
+        },
+        {
+          "id": 3,
+          "text": "Abraham Lincoln"
+        },
+        {
+          "id": 4,
+          "text": "John Adams"
+        }
+      ],
+      "correct_option_id": 2
+    }
+  ],
+  "time_question": [
+    {
+      "id": 1,
+      "text": "Hard is to glove as foot is to ________?",
+      "category": "text",
+
+      "options": [
+        {
+          "id": 1,
+          "text": "Toe"
+        },
+        {
+          "id": 2,
+          "text": "Shoe"
+        },
+        {
+          "id": 3,
+          "text": "Slice"
+        },
+        {
+          "id": 4,
+          "text": "Sock"
+        }
+      ],
+      "correct_option_id": 4
+    },
+    {
+      "id": 2,
+      "text": "You have a lemonade stand and sell each cup for $1. You sell 4 cups. How much money do you make?",
+      "category": "text",
+      "options": [
+        {
+          "id": 1,
+          "text": "$2"
+        },
+        {
+          "id": 2,
+          "text": "$3"
+        },
+        {
+          "id": 3,
+          "text": "$4"
+        }
+      ],
+      "correct_option_id": 3
+    },
+
+    {
+      "id": 3,
+      "text": "Which of these is \"Red\" in color?",
+      "category": "color",
+      "options": [
+        {
+          "id": 1,
+          "text": "#EB6E6E"
+        },
+        {
+          "id": 2,
+          "text": "#FE66C5"
+        },
+        {
+          "id": 3,
+          "text": "#FE9044"
+        }
+      ],
+      "correct_option_id": 1
+    },
+    {
+      "id": 4,
+      "text": "Which number comes next in the sequence: 2, 4, 8, 16, ...?",
+      "category": "text",
+      "options": [
+        {
+          "id": 1,
+          "text": "24"
+        },
+        {
+          "id": 2,
+          "text": "32"
+        },
+        {
+          "id": 3,
+          "text": "64"
+        },
+        {
+          "id": 4,
+          "text": "128"
+        }
+      ],
+      "correct_option_id": 2
+    },
+    {
+      "id": 5,
+      "text": "I speak without a mouth and hear without ears. What am I?",
+      "category": "text",
+      "options": [
+        {
+          "id": 1,
+          "text": "Wind"
+        },
+        {
+          "id": 2,
+          "text": "Echo"
+        },
+        {
+          "id": 3,
+          "text": "Thunder"
+        },
+        {
+          "id": 4,
+          "text": "Silence"
+        }
+      ],
+      "correct_option_id": 2
     }
   ]
 }

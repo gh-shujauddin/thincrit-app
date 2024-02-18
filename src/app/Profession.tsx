@@ -1,11 +1,13 @@
 import { View, Text, StyleSheet, SafeAreaView, Platform, StatusBar, Pressable } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import { Stack, Link, useNavigation } from "expo-router";
 import { AntDesign } from '@expo/vector-icons';
 import data from '@/data.json';
 
 const Profession = () => {
   const navigation = useNavigation();
+  const [selectedIndex, setSelectedIndex] = useState<number | undefined>(undefined);
+
   return (
     <SafeAreaView style={styles.container}>
       <Stack.Screen options={{}} />
@@ -19,39 +21,45 @@ const Profession = () => {
         <View style={{ flex: 1, width: '100%' }}>
 
           <View style={styles.box}>
-            {data.roles.map((value, index) => {
+            {data.roles.map((value) => {
               return (
-                <View style={styles.dataItem}>
-                  <View style={{ paddingHorizontal: 10, paddingVertical: 7, }}>
+                <Pressable
+                  key={value.id}
+                  onPress={() => setSelectedIndex(value.id)}
+                  style={[
+                    styles.dataItem,
+                    { backgroundColor: selectedIndex === value.id ? "#40A3E2" + 90 : "transparent" },
+                  ]}
+                >
+                  <View style={{ paddingHorizontal: 10, }}>
                     <View style={{ flexDirection: 'row', alignItems: 'center', gap: 20, }}>
                       <View style={{ height: 20, width: 20, borderRadius: 20, backgroundColor: "#40A3E2" }} />
-                      <Text style={styles.dataText} key={index}>{value.name}</Text>
+                      <Text style={styles.dataText} key={value.id}>{value.name}</Text>
                     </View>
                   </View>
 
-                  {index !== data.roles.length - 1 &&
+                  {value.id !== data.roles.length &&
                     <View style={{
                       height: StyleSheet.hairlineWidth,
                       width: '100%',
                       backgroundColor: 'black',
-                      marginTop: 5
                     }} />}
-                </View>
+                </Pressable>
               );
             })}
           </View>
         </View>
         <View style={styles.footer}>
           <Link href={`GoalScreen`} asChild>
-            <Pressable>
-              <View style={[styles.button, { backgroundColor: '#40A3E2' }]}>
+            <Pressable disabled={selectedIndex === undefined}>
+              <View style={[styles.button, { backgroundColor: (selectedIndex === undefined) ? 'lightgray' : '#40A3E2' }]}>
                 <Text style={styles.buttonText}>CONTINUE</Text>
               </View>
             </Pressable>
           </Link>
         </View>
       </View>
-    </SafeAreaView>
+    </SafeAreaView >
   );
 };
 
@@ -79,8 +87,9 @@ const styles = StyleSheet.create({
   },
   dataItem: {
     width: '100%',
-    paddingVertical: 6,
-    justifyContent: 'center',
+    justifyContent: 'space-between',
+    paddingTop: 10,
+    height: 50,
   },
   dataText: {
     fontFamily: 'SignicaLight',
