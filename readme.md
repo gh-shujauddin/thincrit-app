@@ -5,7 +5,7 @@
 Thinkrit is an app that's like Superman for your brain and Captain America for your schedule.
 <br />
 
-https://github.com/gh-shujauddin/thincrit-app/assets/73093103/f1ff9209-c7ce-4aba-8396-8bd8353a2ef6"
+https://github.com/gh-shujauddin/thincrit-app/assets/73093103/f1ff9209-c7ce-4aba-8396-8bd8353a2ef6
 
 
 ## This is how it work 🌞
